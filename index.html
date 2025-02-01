@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Color Script -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <!-- Adlam Display Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <!-- Sora Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- DaisyUi CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+        }
+
+        
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+          
+    </style>
+
+</head>
+<body>
+    <main>
+        <header class=" bg-[#FFF9F4]">
+            <nav class="max-w-md md:max-w-6xl mx-auto flex flex-row justify-between items-center h-16 lg:h-24 border-b border-solid border-black md:border-hidden">
+                <div class="flex flex-row items-center gap-x-3">
+                    <img class="w-12 pl-3" src="logo-header.png" alt="logo">
+                    <h2 class="hidden lg:block sora-font font-normal text-2xl text-left text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+                </div>
+    
+                <div class="hidden lg:flex items-center">
+                    <ul class="flex flex-row sora-font font-normal text-xl text-left text-[#111111] gap-x-8">
+                        <li>Find a pet</li>
+                        <li>Breeds</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+    
+                <div class="hidden lg:flex flex-row gap-x-3 items-center">
+                    <img class="w-6 h-6" src="bell.png" alt="bell">
+                    <img class="w-6 h-6" src="search.png" alt="search">
+                    <button class="w-28 h-11 px-7 rounded-lg border-2 border-[#FFDC26] text-[#111111] sora-font font-normal text-xl text-left">Login</button>
+                    <button class="w-36 h-11 px-7 rounded-lg bg-[#FFDC26] sora-font font-normal text-xl text-left text-[#111111]">Register</button>
+                </div>
+
+                <div class="flex lfex-row w-7 h-7 pr-1 lg:hidden md:hidden">
+                    <img src="bars-3.png" alt="threeBars">
+                </div>
+            </nav>
+        </header>
+
+        <section class="max-w-md md:max-w-6xl mx-auto bg-[#fff] mt-8 md:mt-20">
+            <div class="md:w-full relative z-10 pl-3">
+                <h1 class="adlam-display-font font-normal text-3xl lg:text-5xl text-left text-[#111111] mb-4">Pamper Your Pet,<br> Because They Deserve <br>the Bes</h1>
+                <p class="w-full md:w-2/3 sora-font font-normal text-base md:text-xl md:leading-9 text-left text-[#111111] opacity-70 mb-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="w-36 md:w-40 h-10 md:h-11 px-7 py-2.5 rounded-lg bg-[#FFDC26] sora-font font-normal text-base md:text-xl text-left text-[#111111] animate-pulse ">Find a pet</button>
+                
+            </div>
+
+            <div class="relative -top-24 md:-top-80">
+                <img src="/cat-big.png" alt="">
+            </div>
+            
+        </section>
+
+        <section class="px-2 max-w-md md:max-w-6xl mx-auto -mt-24 md:-mt-64 mb-32">
+            <h1 class="adlam-display-font font-normal text-2xl md:text-4xl text-left text-[#111111] my-12">Browse By Categories</h1>
+            <div class="max-w-xs md:max-w-6xl grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-x-6 h-60 md:h-56 mx-auto">
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center rounded-xl pt-2">
+                    <img class="bg-[#fff] rounded-full p-2 md:p-6" src="/dog-cartoon.png" alt="dog">
+                    <h1 class="adlam-display-font font-normal text-base md:text-xl text-left text-[#000000] pt-1 md:pt-6">Dog</h1>
+                    <p class="sora-font font-normal text-xs md:text-base text-left text-[#000000] pt-1 md:pt-2.5 pb-2">3 items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center rounded-xl pt-2">
+                    <img class="bg-[#fff] rounded-full p-2 md:p-6" src="/fish-cartoon.png" alt="dog">
+                    <h1 class="adlam-display-font font-normal text-base md:text-xl text-left text-[#000000] pt-1 md:pt-6">Fish</h1>
+                    <p class="sora-font font-normal text-xs md:text-base text-left text-[#000000] pt-1 md:pt-2.5">3 items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center rounded-xl pt-2">
+                    <div class="bg-white rounded-full p-2">
+                        <img class="md:w-20 md:h-20 md:p-3" src="/cat-cartoon.png" alt="dog">
+                    </div>
+                    
+                    
+                    <h1 class="adlam-display-font font-normal text-base md:text-xl text-left text-[#000000] pt-1 md:pt-6">Cat</h1>
+                    <p class="sora-font font-normal text-xs md:text-base text-left text-[#000000] pt-1 md:pt-2.5 pb-2">3 items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center rounded-xl pt-2">
+                    <img class="bg-[#fff] rounded-full p-2 md:p-6" src="/bird-cartoon.png" alt="dog">
+                    <h1 class="adlam-display-font font-normal text-base md:text-xl text-left text-[#000000] pt-1 md:pt-6">Birds</h1>
+                    <p class="sora-font font-normal text-xs md:text-base text-left text-[#000000] pt-1 md:pt-2.5 pb-2">3 items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center rounded-xl pt-2">
+                    <img class="bg-[#fff] rounded-full p-2 md:p-7" src="/mouse-cartoon.png" alt="dog">
+                    <h1 class="adlam-display-font font-normal text-base md:text-xl text-left text-[#000000] pt-2 md:pt-6">Small pet</h1>
+                    <p class="sora-font font-normal text-xs md:text-base text-left text-[#000000] pt-2 md:pt-2.5 pb-2">3 items</p>
+                </div>
+
+                <div class="bg-[#F9DF8A] flex flex-col items-center justify-center rounded-xl pt-2">
+                    <div class="bg-white rounded-full p-2">
+                        <img class="w-10 md:w-20 h-10 md:h-20  md:p-4" src="/rabbit-cartoon.png" alt="dog">
+                    </div>
+                    
+                    
+                    <h1 class="adlam-display-font font-normal text-base md:text-xl text-left text-[#000000] pt-2 md:pt-6">Rabit</h1>
+                    <p class="sora-font font-normal text-xs md:text-base text-left text-[#000000] pt-2 md:pt-2.5 pb-2">2 items</p>
+                </div>
+            </div>
+        </section>
+
+        <section class=" md:bg-[#FFF9F4]">
+            <div class="px-2 max-w-md md:max-w-6xl mx-auto pb-12 md:pb-24">
+                <h1 class="adlam-display-font font-normal text-2xl md:text-4xl text-left text-[#111111] pt-20 pb-12">Trending Pet Products</h1>
+                <div class="flex flex-col md:flex-row gap-3">
+                    <div class="h-[350px] md:h-[450px] px-2 md:px-5 py-0 md:py-5 w-full md:w-1/3 bg-[#F9DF8A] rounded-lg">
+                        <h1 class="adlam-display-font font-normal text-3xl text-left text-[#000000] pt-12">T- Shirt For Dogs</h1>
+                        <p class="sora-font font-normal text-base text-left text-[#111111] pt-7 pb-7">Discover a world of treats, toys, and essentials handpicked for</p>
+                        <button class="w-40 h-11 px-7  py-2.5 rounded-lg bg-[#FFFFFF] sora-font text-[#111111] ">Shop Now</button>
+                        <img class="w-28 md:w-56 relative -right-44 md:-right-32 -top-12 md:-top-32" src="/cute-pet-small.png" alt="cute-pet-small">
+                    </div>
+    
+                    <div class="w-full md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-3 justify-items-center">
+                        <div class="hidden md:flex flex-row md:gap-6 w-40 md:w-60 h-16 md:h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/dog-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/fish-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/bird-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/rabbit-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+        
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/bird-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/pet-couch.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+        
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/fish-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+        
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/pet-couch.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row md:gap-6 w-40 md:w-60 h-28 rounded-lg bg-[#FFFFFF]">
+                            <div class="flex  flex-col justify-center px-0 md:px-3">
+                                <img class="w-20 h-20 bg-[#FFF9F4] rounded-lg" src="/rabbit-cartoon.png" alt="dog-cartoon">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <div class="flex flex-row gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#FFC107]">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                      </svg>
+
+                                      <p class="sora-font font-normal text-base text-left text-[#111111]">4.5</p>
+                                      
+                                </div>
+                                <h1 class="sora-font font-medium text-xl text-left text-[#111111]">Pet Bed</h1>
+                                <p class="sora-font font-medium text-base text-[#111111]">$39.99</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="px-2 max-w-md md:max-w-6xl mx-auto mb-12">
+            <h1 class="adlam-display-font font-normal text-2xl md:text-4xl text-left text-[#111111] mt-0 md:mt-24 pb-6 md:pb-12">Everyday low Price</h1>
+            <div class="flex flex-col md:flex-row gap-5">
+                <div class="w-full md:w-3/5 flex flex-row bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] justify-center rounded-xl">
+                    <div class="flex flex-col justify-start md:justify-center pl-3 pt-3 md:pl-0 md:pt-0 relative md:static left-12 md:left-0">
+                        <h5 class="hidden md:block sora-font font-normal text-xl text-left text-[#000000]">Under Price</h5>
+                        <h3 class="adlam-display-font font-normal text-xl md:text-3xl text-left text-[#000000]">Pet Grooming Mitt</h3>
+                        <h4 class="hidden md:block adlam-display-font font-normal text-2xl text-left text-[#FFFFFF]">(Easy Hair Removal)</h4>
+                        <h1 class="adlam-display-font font-normal text-3xl md:text-6xl text-left text-[#FFFFFF] md:text-[#000000]">$7.99</h1>
+                    </div>
+                    <div class="w-52 md:w-72 flex flex-col justify-center">
+                        <img class="relative md:static top-4 md:top-0" src="/cute-dog-mid.png" alt="">
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 flex flex-row bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] justify-center rounded-xl">
+                    <div class="pl-3 pt-6 flex flex-col relative md:static left-10 md:left-0">
+                        <h1 class="adlam-display-font font-normal text-xl md:text-3xl text-left text-[#000000]">T-Shirt for Dogs</h1>
+                        <h1 class="adlam-display-font font-normal text-4xl md:text-6xl text-[#FFDC26]">$7.99</h1>
+                    </div>
+                    <div class="w-52 md:w-64 relative md:static top-3 md:top-0 flex flex-col justify-center">
+                        <img src="/cute-pet-mid.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-2 max-w-md md:max-w-6xl mx-auto pt-10">
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border ">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="adlam-display-font collapse-title text-xl font-medium bg-[#FFF9F4]">Our Journey Towards Happiness</div>
+                  <div class="collapse-content bg-[#F8CCFB]">
+                    <p class="sora-font ">At our pet shop, our journey towards happiness began with a simple dream: to bring joy and comfort to pets and their families. Over the years, we've grown from a small shop to a trusted name in the community, offering not only pet products but also adoption services and professional care for every furry friend that comes our way. Join us on this incredible journey as we continue to spread happiness to pets and their owners!</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border ">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="adlam-display-font collapse-title text-xl font-medium bg-[#FFF9F4]">Adopt a Pet</div>
+                  <div class="collapse-content bg-[#F8CCFB]">
+                    <p class="sora-font bg-[#F8CCFB]">Looking to adopt a furry friend? We have a variety of pets looking for a loving home. Visit our adoption page for more details on how you can give a pet a forever home.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border ">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="adlam-display-font collapse-title text-xl font-medium bg-[#FFF9F4]">Pet Services</div>
+                  <div class="collapse-content bg-[#F8CCFB]">
+                    <p class="sora-font ">We offer a range of pet services, including grooming, training, and health check-ups. Our experienced staff is here to care for your pet and provide the best services for their well-being.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="px-2 max-w-md md:max-w-6xl mx-auto relative top-16 md:top-60">
+            <div class="w-full h-[523px] md:h-[523px] flex flex-col md:flex-row bg-[#FFF9F4] rounded-2xl">
+                <div class="w-full md:w-1/2 flex flex-row justify-center items-center">
+                    <img class="w-1/2 pt-6" src="/cute-pet-mid.png" alt="cute-pet">
+                </div>
+    
+                <div class="w-full md:w-2/3 flex flex-col justify-center items-center md:items-start">
+                    <h1 class="adlam-display-font font-normal text-xl md:text-4xl text-left text-[#111111] pb-5">Get Pawsome News!</h1>
+                    <p class="sora-font font-normal text-base md:text-xl text-center md:text-left text-[#111111] pb-9">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="w-72 md:w-96 h-12 rounded-lg bg-[#FFFFFF] sora-font font-normal text-left text-base text-[#C4C4C4]" type="text" placeholder="Enter email....">
+                    <div class="pt-9">
+                        <button class="w-40 h-11 px-7 py-2.5 rounded-lg bg-[#FFDC26] sora-font font-normal text-xl text-left text-[#111111] mb-12 md:mb-24">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <footer class="bg-[#FFDC26] bg-opacity-50 h-[800px] md:h-[590px]   -top-64">
+            <div class=" px-2 max-w-md md:max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end pt-80 md:pt-96">
+                <div>
+                    <div class="flex flex-row  items-center gap-3 pb-6">
+                        <img src="/logo-footer.png" alt="logo">
+                        <h1 class="sora-font font-normal text-2xl text-left text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+                    </div>
+                    <p class="sora-font font-normal text-x text-[#111111] text-opacity-70 pb-5 md:pb-0">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+                </div>
+
+                <div>
+                    <h1 class="sora-font font-normal text-xl text-left text-[#111111] pb-7">Find a pet</h1>
+                    <h1 class="sora-font font-normal text-xl text-left text-[#111111] pb-8">Breeds</h1>
+                    <h1 class="sora-font font-normal text-xl text-left text-[#111111] pb-5 md:pb-0">Contact us</h1>
+                </div>
+
+                <div>
+                    <h1 class="sora-font font-normal text-xl text-left text-[#111111] pb-5">Follow Us</h1>
+                    <div class="flex flex-row items-center gap-4">
+                        <img src="/facebook.png" alt="fb">
+                        <img src="/insta.png" alt="insta">
+                        <img src="/linkedin.png" alt="linke">
+                        <img src="/yt.png" alt="yt">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+</body>
+</html>
